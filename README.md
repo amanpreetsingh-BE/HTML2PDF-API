@@ -4,6 +4,7 @@
 
 POST https://regal-melomakarona-dc80f3.com/api/getPDF
 
+```javascript
 const data = {
   token: <string>,
   html: <string>,
@@ -20,7 +21,7 @@ const response = await fetch(
     body: JSON.stringify(data),
   }
 );
-  
+
 ## Parameters
   
 - html : a string containing the HTML with handlebars
