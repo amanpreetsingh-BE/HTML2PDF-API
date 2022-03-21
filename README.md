@@ -27,3 +27,11 @@ const response = await fetch(
 - html : a string containing the HTML with handlebars
 - context : a JSON containing the values of handlebars
 - token : API key provided by me (contact me if needed)
+
+## Raturn value
+
+Return a BASE64 pdf 
+
+```javascript
+const base64PDF = await response.json();
+```
