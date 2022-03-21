@@ -2,7 +2,7 @@
 
 ## How to use (Node.js)
 
-POST https://regal-melomakarona-dc80f3.com/api/getPDF
+POST https://regal-melomakarona-dc80f3.netlify.app/api/getPDF
 
 ```javascript
 const data = {
@@ -11,7 +11,7 @@ const data = {
   context: <JSON>,
 };
 const response = await fetch(
-  "https://regal-melomakarona-dc80f3.com/api/getPDF",
+  "https://regal-melomakarona-dc80f3.netlify.app/api/getPDF",
   {
     method: "POST",
     headers: {
