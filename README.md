@@ -21,7 +21,7 @@ const response = await fetch(
     body: JSON.stringify(data),
   }
 );
-
+```
 ## Parameters
   
 - html : a string containing the HTML with handlebars
