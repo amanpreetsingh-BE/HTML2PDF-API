@@ -1,10 +1,28 @@
 # HTML2PDF-API
 
-## How to use
+## How to use (Node.js)
 
-curl https://restpack.io/api/html2pdf/v7/convert
-?access_token=<YOUR TOKEN HERE>
-&url=https%3A%2F%2Frestpack.io%2Fmisc%2Fhtml2pdf%2Finvoice.html
-&json=true
-&pdf_page=A4
-&emulate_media=screen
+POST https://regal-melomakarona-dc80f3.com/api/getPDF
+
+const data = {
+  token: <string>,
+  html: <string>,
+  context: <JSON>,
+};
+const response = await fetch(
+  "https://regal-melomakarona-dc80f3.com/api/getPDF",
+  {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  }
+);
+  
+## Parameters
+  
+- html : a string containing the HTML with handlebars
+- context : a JSON containing the values of handlebars
+- token : API key provided by me (contact me if needed)
