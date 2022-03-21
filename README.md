@@ -33,5 +33,6 @@ const response = await fetch(
 Return a BASE64 pdf 
 
 ```javascript
-const base64PDF = await response.json();
+const responseJSON = await response.json();
+console.log(responseJSON.base64PDF)
 ```
