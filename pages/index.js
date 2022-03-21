@@ -235,11 +235,11 @@ export async function getServerSideProps() {
       body: JSON.stringify(data),
     }
   );
-  const base64PDF = await response.json();
+  const responseJSON = await response.json();
 
   return {
     props: {
-      base64PDF: base64PDF,
+      base64PDF: responseJSON.base64PDF,
     },
   };
 }
