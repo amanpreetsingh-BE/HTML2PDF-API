@@ -14,7 +14,7 @@ export default async function handler(req, res) {
         executablePath: await chromium.executablePath,
         args: chromium.args,
         defaultViewport: chromium.defaultViewport,
-        headless: chromium.headless,
+        headless: false, //chromium.headless,
       });
       const page = await browser.newPage();
       await page.setContent(compiledHTML);
